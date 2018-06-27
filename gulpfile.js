@@ -4,13 +4,13 @@ var rename = require('gulp-rename');
 
 gulp.task('concat', function() {
   return gulp.src('./build/*.js')
-    .pipe(concat('made-with-love.js'))
+    .pipe(concat('example-element.js'))
     .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('rename', function() {
   return gulp.src('./build/styles.css')
-    .pipe(rename('made-with-love.css'))
+    .pipe(rename('example-element.css'))
     .pipe(gulp.dest('./dist'));
 });
 
